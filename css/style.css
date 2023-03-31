@@ -149,7 +149,7 @@ header{
 
 /* Cat */
 
-.cta {
+/* .cta {
   position: relative;
   isolation: isolate;
 }
@@ -159,7 +159,7 @@ header{
     z-index: -1;
     inset: 0;
     background-image: url("/images/productos/Plegables/3x3-techo-der_0011_Layer-1-1024x792.jpg");
-  }
+  } */
 
 
 
@@ -235,7 +235,7 @@ header{
   padding-block: var(--size-400);
 }
 
-.container-header{
+.container-header {
   --max-width: 1200px;
   --padding: 1rem;
 
@@ -243,11 +243,10 @@ header{
   margin-inline: auto;
 }
 
-.container{
+.container {
   --max-width: 1000px;
   --padding: 1rem; 
 }
-
 
 .even-columns {
   display: grid;
@@ -255,7 +254,7 @@ header{
   align-items: center;
 }
 
-.header-box{
+.header-box {
   place-content: center;
   text-align: center;
   display: grid;
@@ -615,28 +614,7 @@ header .logo img:hover {
   margin: auto;
   margin-top: var(--size-400);
   border: 0; 
-}
-
-  /* .card-body {
-    text-align: center;    
-  } */
-    /* .card-body h4 {
-      margin-left: 10px;
-          margin-top: 10px; 
-    }
-      .card-body h5 {
-        margin-left: 10px;
-          margin-bottom: 10px; 
-      }
-        .card-body h6 {
-          margin-left: 10px;
-          margin-bottom: 10px;  
-        }
-        .card-body p {
-          margin-left: 10px;
-          margin-bottom: 10px;   
-        } */
-      
+}    
     
 .box-icon {
   display:flex;
@@ -700,8 +678,14 @@ header .logo img:hover {
   overflow: hidden;
 }
 
+.carousel__elements img {
+  margin: auto;
+  height: 250px;
+}
+
 .carousel__elements button {
-  margin-top: 50px;
+  align-content: center;
+  margin-top: 30px;
 }
 
 .carousel__indicator.glider-dots button {
@@ -718,6 +702,10 @@ header .logo img:hover {
   opacity: 1;
 }
 
+.carousel__list glider draggable {
+
+}
+
 @media (max-width: 992px){
   .carousel__previous,
   .carousel__next {
@@ -729,16 +717,18 @@ header .logo img:hover {
 
 .box-p {
   display: flex;
+  justify-content: center;
   width: 400px;
   padding: 10px;
-  border: 3px solid var(--clr-primary-100);
+  border: 2px solid var(--clr-primary-100);
   border-radius: 20px;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .box-p img {
   max-width: 100%;
   height: 150px;
+  align-content: center;
   object-fit: cover;
   padding: 5px;
 }
@@ -750,18 +740,99 @@ header .logo img:hover {
   min-width: 100px;
 }
 
-/* @media (min-width: 992px) {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+@media (max-width: 992px) {
   .box-p {
-    max-width: 700px;
+    width: 300px;
+    padding: 5px;
   }
-  .box-p img {
-    float: left;
+}
+
+.container-v {
+  width: 900px;
+  height: 506.25px;
+  margin: 50px auto;
+}
+
+@media (max-width: 992px) {
+  .container-v {
+    width: 350px;
+    height: 196.88px;
+  }
+}
+
+.invert h2, p{
+  color: var(--clr-neutral-100);
+}
+.invert-img {
+  width: 900px;
+}
+
+/* Star Form and Map */
+
+.box-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-container {
+  max-width: 960px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  /* background: var(--clr-neutral-400); */
+  /* box-shadow: 0 0 0.5rem var(--clr-primary-100); */
+  overflow: hidden;
+}
+
+.form-container {
+  font-size: var(--fs-400);
+  margin-bottom: 1.5rem;
+  margin: 15px 10px;
+  border: 2px solid var(--clr-primary-100);
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+.contact-form {
+  display: grid;
+  row-gap: 1rem;
+}
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    border: 2px;
+    padding: 10px;
+    background: var(--clr-neutral-400);
+    border-radius: 0.4rem;   
+  }
+  .contact-form textarea{
+    resize: none;
+    height: 200px;
   }
 
-} */
+.form-button {
+  margin-top: 15px;
+}
+
+.map iframe {
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .form-container {
+    width: 62%;
+    justify-content: center;
+  }
+}
+
+/* End Form and Map */
