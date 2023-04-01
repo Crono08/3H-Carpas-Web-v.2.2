@@ -523,7 +523,8 @@ header .logo img:hover {
 .bg-img {
   width: 100%;
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1584559759045-d5062ca44f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1700&q=100);
+  background-image: url(/images/header/SLD_BICIS_MAY2021_3H-1024x555.jpg);
+  background-repeat: x;
   background-size: cover;
   background-position: center;
 }
@@ -760,8 +761,10 @@ header .logo img:hover {
   }
 }
 
+
+
 .invert-img {
-  width: 900px;
+  width: 100%;
 }
 
 /* Star Form and Map */
@@ -792,6 +795,7 @@ header .logo img:hover {
   border: 2px solid var(--clr-primary-100);
   border-radius: 20px;
   padding: 20px 20px;
+  background: var(--clr-neutral-100);
 }
 
 .contact-form {
@@ -836,16 +840,143 @@ header .logo img:hover {
 
 /* End Form and Map */
 
+/* Star Carousel-C */
+
+.carousel__container-c {
+  position: relative;
+  text-align: center;
+}
+
+.carousel__previous-c,
+.carousel__next-c {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 50px;
+  font-size: 35px;
+  text-align: center;
+  background: none;
+  color: var(--clr-primary-100);
+  opacity: 20%;
+}
+
+.carousel__previous-c:hover,
+.carousel__next-c:hover {
+  opacity: 100%;
+}
+
+.carousel__previous-c {
+  left: -30px;
+}
+
+.carousel__next-c {
+  right: -30px;
+}
+
+.carousel__list-c {
+  overflow: hidden;
+}
+
+.carousel__elements-c button {
+  margin-top: 20px;
+}
+
+.carousel__elements-c p {
+  margin-bottom: 0;
+}
+
+.carousel__indicator-c.glider-dots button {
+  margin-top: 50px;
+  background: var(--clr-primary-100);
+  opacity: .2;  
+}
+
+.carousel__indicator-c.glider-dots button:hover {
+  opacity: .5;
+}
+
+.carousel__indicator-c.glider-dots button.active {
+  opacity: 1;
+}
+
+@media (max-width: 992px){
+  .carousel__previous-c,
+  .carousel__next-c,
+  .carousel__indicator-c.glider-dots button {
+    display: none;
+  }
+}
+
+/* End Carousel-C */
+
+
+
 /* Star Footer */
 
-footer {
-  width: 100%;
-  padding: 50px 0px;
-  margin: 0px 10px;
-  text-decoration: none; 
+
+.box-footer-title img {
+  width: 100px;
+  margin-top: 18px;
 }
 
-.box-footer-title {
-  color: var(--clr-neutral-100);
-  text-decoration: none;
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
 }
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container-footer .direction {
+  color: var(--clr-neutral-100);
+  max-width: 450px;
+  padding: 20px;
+}
+  .container-footer .direction h3 {
+    color: var(--clr-primary-400);
+  }
+  
+.box-footer h6 {
+  color: var(--clr-primary-400);
+}
+  .box-footer a {
+    margin-top: 10px;
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+  }
+  .box-footer a:hover {
+    color: var(--clr-primary-300);
+  }
+
+  .box-copyright {
+    max-width: 1350px;
+    margin: auto;
+    text-align: center;
+    color: var(--clr-neutral-100);
+  }
+    .box-copyright p {
+      margin-top: 10px;
+      margin-bottom: 0%;
+      padding-bottom: 20px;
+    }
+    .box-copyright hr {
+      border: none;
+      height: 1px;
+      background-color: var(--clr-primary-400);
+    }
+
+    @media (max-width: 992px) {
+      .container-footer {
+        display: grid;
+      }
+    }
