@@ -523,7 +523,7 @@ header .logo img:hover {
 .bg-img {
   width: 100%;
   height: 100vh;
-  background-image: url(/images/header/SLD_BICIS_MAY2021_3H-1024x555.jpg);
+  background-image: url(../images/header/HEADER-Playa_WEBSITE_3H.jpg);
   background-repeat: x;
   background-size: cover;
   background-position: center;
@@ -719,8 +719,8 @@ header .logo img:hover {
 .box-p {
   display: flex;
   justify-content: center;
-  width: 400px;
-  padding: 10px;
+  width: 380px;
+  padding: 5px;
   border: 2px solid var(--clr-primary-100);
   border-radius: 20px;
   margin: 30px auto;
@@ -743,7 +743,7 @@ header .logo img:hover {
 
 @media (max-width: 992px) {
   .box-p {
-    width: 300px;
+    width: 350px;
     padding: 5px;
   }
 }
@@ -761,7 +761,18 @@ header .logo img:hover {
   }
 }
 
+.youtube {
+  width: 800px;
+  height: 450px;
+  margin: auto;
+}
 
+@media (max-width: 992px) {
+  .youtube {
+    width: 350px;
+    height: 200px;
+  }
+}
 
 .invert-img {
   width: 100%;
@@ -980,3 +991,5 @@ header .logo img:hover {
         display: grid;
       }
     }
+
+
