@@ -975,6 +975,22 @@ header .logo img:hover {
 
 /* End Footer */
 
+/* Plegables */
+
+.bg-img-ple {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../images/header/SLD_BICIS_MAY2021_3H-1024x555.jpg);
+  background-repeat: x;
+  background-size: cover;
+  background-position: center;
+}
+
+.not-mg {
+  margin-top: -50px;
+}
+
+
 /* Set Playero */
 
 .bg-img-set {
@@ -986,9 +1002,6 @@ header .logo img:hover {
   background-position: center;
 }
 
-.not-mg {
-  margin-top: -50px;
-}
 
 .container_set {
   display:flex;
@@ -1041,3 +1054,35 @@ header .logo img:hover {
     }
   }
 
+/* Brisa */
+
+.bg-img-bri {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../images/header/SLD-1C_BRISA_3H_1-1024x555.jpg);
+  background-repeat: x;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Taj Mahal */
+
+.bg-img-taj {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../images/header/img1-arana17-1024x1024.jpg);
+  background-repeat: x;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Stand */
+
+.bg-img-sta {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../images/header/MST_BANNER-EDIT_PERSONALIZADO_WEBSITE.jpg);
+  background-repeat: x;
+  background-size: cover;
+  background-position: center;
+}
