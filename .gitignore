@@ -1,5 +1,5 @@
 webmail/
-node_module/
+node_modules/
 passwords.txt
 *.ai
 *.eps

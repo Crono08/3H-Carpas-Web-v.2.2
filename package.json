@@ -1,0 +1,16 @@
+{
+  "name": "3h-carpas",
+  "version": "2.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss css/main.css"
+  },
+  "author": "jonathan-calcano-r",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.61.0"
+  }
+}
