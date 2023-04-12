@@ -1,0 +1,83 @@
+//* Reglas de tamaño de caja */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+//* Elimina el margen por defecto */
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+//* Eliminar estilos de lista en elementos ul, ol con una función de lista, lo que sugiere que se eliminará el estilo predeterminado */
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+//* Establecer los valores predeterminados del srcoll */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
+body {
+    height: 100%;
+}
+
+//* Establecer los valores predeterminados del cuerpo central */
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+//* Estilio general Body */
+
+body {
+    font-size: var($fs-body);
+    font-family: var($ff-body);
+    color: var($clr-primary-100);
+}
+
+//* Los elementos que no tienen una clase obtienen estilos predeterminados */
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+//* Hacer que las imágenes sean más fáciles de trabajar */
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+//* Heredar fuentes para entradas y botones */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+  
+.container {
+    --max-width: 1000px;
+    --padding: 1rem; 
+}
+  
+.even-columns {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+}
+

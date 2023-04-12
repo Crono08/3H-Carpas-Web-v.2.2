@@ -1,16 +1,22 @@
 {
   "name": "3h-carpas",
   "version": "2.2.0",
-  "description": "",
+  "description": "Somos una empresa familiar fundada hace más de 10 años por padre e hijos. 3H es el sello de calidad que la familia Hernández impuso en el mercado local para las carpas.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
     "sass": "sass",
     "sass:watch": "sass --watch scss/main.scss css/main.css"
   },
-  "author": "jonathan-calcano-r",
+  "author": "3H - Carpas",
   "license": "ISC",
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "sass": "^1.61.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }

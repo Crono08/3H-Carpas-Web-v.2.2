@@ -1,0 +1,41 @@
+//Media queries
+@media (min-width: 50em) {
+    :root {
+      --fs-body: var($fs-400);
+      --fs-nav: var($fs-300);
+      --fs-primary-heading: var($fs-900);
+      --fs-secundary-heading: var($fs-700);    
+    }
+}
+
+//* Eliminar todas las animaciones, transiciones y desplazamiento suave para las personas que prefieren no verlos */
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+}
+    
+*,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+
+// Header
+
+@media (min-width: 50em){
+    .header-box {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 50em) {
+    .even-columns {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+    }
+}
