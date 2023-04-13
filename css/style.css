@@ -533,6 +533,13 @@ header .logo img:hover {
 .carousel__container-p {
   position: relative;
   text-align: center;
+  align-content: center;
+}
+
+.carousel__container-p img {
+  margin: auto;
+  height: 330px;
+  border-radius: 10px 10px 70px 10px;
 }
 
 .carousel__previous-p,
@@ -574,6 +581,7 @@ header .logo img:hover {
 }
 
 .carousel__elements-p p {
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
@@ -591,9 +599,9 @@ header .logo img:hover {
   opacity: 1;
 }
 
-@media (max-width: 992px){
-  .carousel__previous,
-  .carousel__next {
+@media (max-width: 992px) {
+  .carousel__previous-p,
+  .carousel__next-p {
     display: none;
   }
 }
@@ -612,13 +620,15 @@ header .logo img:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px 350px;
+  margin: auto;
+  text-align: center;
 }
 
 .text-icon i {
   font-size: 45px;
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
   .box-icon {
     display: flex;
     flex-direction: column;
@@ -675,7 +685,7 @@ header .logo img:hover {
 
 .carousel__elements button {
   align-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .carousel__indicator.glider-dots button {
@@ -705,6 +715,22 @@ header .logo img:hover {
 
 /* End Carousel */
 
+#img-bg {
+  position: absolute;
+  z-index: -2;
+  width: 600px;
+  margin: auto;
+  margin-top: 80px;
+  padding-right: 150px;
+}
+
+@media (max-width: 992px) {
+  #img-bg {
+    position: absolute;
+    margin-top: 10px;
+  }
+}
+
 .box-p {
   display: flex;
   justify-content: center;
@@ -732,7 +758,7 @@ header .logo img:hover {
 
 @media (max-width: 992px) {
   .box-p {
-    width: 350px;
+    width: 100%;
     padding: 5px;
   }
 }
@@ -758,7 +784,7 @@ header .logo img:hover {
 
 @media (max-width: 992px) {
   .youtube {
-    width: 350px;
+    width: 100%;
     height: 200px;
   }
 }
@@ -808,8 +834,7 @@ header .logo img:hover {
     border: 2px;
     padding: 10px;
     background: var(--clr-neutral-400);
-    border-radius: 0.4rem;
-    bottom-ho;  
+    border-radius: 0.4rem;  
   }
 
   .contact-form textarea{
@@ -829,11 +854,11 @@ header .logo img:hover {
 @media (max-width: 992px) {
   .contact-container {
     grid-template-columns: 1fr;
-    margin: 0 auto;
-    width: 90%;
+    margin: auto;
+    width: 100%;
   }
   .form-container {
-    width: 60%;
+    width: 70%;
     justify-content: center;
   }
 }
