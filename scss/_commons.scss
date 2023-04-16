@@ -1,4 +1,4 @@
-//* Reglas de tamaño de caja */
+/* Reglas de tamaño de caja */
 
 *,
 *::before,
@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-//* Elimina el margen por defecto */
+/* Elimina el margen por defecto */
 
 * {
   margin: 0;
@@ -14,45 +14,38 @@
   font: inherit;
 }
 
-//* Eliminar estilos de lista en elementos ul, ol con una función de lista, lo que sugiere que se eliminará el estilo predeterminado */
+/* Eliminar estilos de lista en elementos ul, ol con una función de lista, lo que sugiere que se eliminará el estilo predeterminado */
 
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
 
-//* Establecer los valores predeterminados del srcoll */
+/* Establecer los valores predeterminados del srcoll */
 
 html:focus-within {
   scroll-behavior: smooth;
 }
+
 html,
 body {
   height: 100%;
 }
 
-//* Establecer los valores predeterminados del cuerpo central */
+/* Establecer los valores predeterminados del cuerpo central */
 
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
-//* Estilio general Body */
-
-body {
-  font-size: $fs-body;
-  font-family: $ff-primary;
-  color: $clr-primary-100;
-}
-
-//* Los elementos que no tienen una clase obtienen estilos predeterminados */
+/* Los elementos que no tienen una clase obtienen estilos predeterminados */
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-//* Hacer que las imágenes sean más fáciles de trabajar */
+/* Hacer que las imágenes sean más fáciles de trabajar */
 
 img,
 picture,
@@ -61,7 +54,7 @@ svg {
   display: block;
 }
 
-//* Heredar fuentes para entradas y botones */
+/* Heredar fuentes para entradas y botones */
 
 input,
 button,
@@ -69,15 +62,42 @@ textarea,
 select {
   font: inherit;
 }
+
+/* Eliminar todas las animaciones, transiciones y desplazamiento suave para las personas que prefieren no verlos */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
   
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 .container {
   --max-width: 1000px;
   --padding: 1rem; 
+
 }
-  
+
 .even-columns {
   display: grid;
   gap: 2rem;
   align-items: center;
 }
+
+/* General Styling  */
+
+body {
+  font-size: $fs-body;
+  font-family: $ff-body;
+  color: $clr-primary-100;
+}
+
 

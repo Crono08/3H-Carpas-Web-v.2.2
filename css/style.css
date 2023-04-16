@@ -70,7 +70,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} 
 
 /* Elimina el margen por defecto */
 
@@ -78,14 +78,14 @@
     margin: 0;
     padding: 0;
     font: inherit;
-}
+} 
 
 /* Eliminar estilos de lista en elementos ul, ol con una función de lista, lo que sugiere que se eliminará el estilo predeterminado */
 
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
-}
+} 
 
 /* Establecer los valores predeterminados del srcoll */
 
@@ -95,20 +95,20 @@ html:focus-within {
 html,
 body {
     height: 100%;
-}
+} 
 
 /* Establecer los valores predeterminados del cuerpo central */
 
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-}
+} 
 
 /* Los elementos que no tienen una clase obtienen estilos predeterminados */
 
-a:not([class]) {
+ a:not([class]) {
   text-decoration-skip-ink: auto;
-}
+} 
 
 /* Hacer que las imágenes sean más fáciles de trabajar */
 
@@ -117,7 +117,7 @@ picture,
 svg {
   max-width: 100%;
   display: block;
-}
+} 
 
 /* Heredar fuentes para entradas y botones */
 
@@ -126,7 +126,7 @@ button,
 textarea,
 select {
   font: inherit;
-}
+} 
 
 /* Eliminar todas las animaciones, transiciones y desplazamiento suave para las personas que prefieren no verlos */
 
@@ -143,11 +143,11 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
+} 
 
 header{
   border-bottom: 2px solid var(--clr-primary-400);
-}
+} 
 
 /* Clases Utiles */
 
@@ -227,7 +227,7 @@ header{
 
 .padding-block-400 {
   padding-block: var(--size-400);
-}
+} 
 
 .container-header {
   --max-width: 1200px;
@@ -246,7 +246,7 @@ header{
   display: grid;
   gap: 2rem;
   align-items: center;
-}
+} 
 
 .header-box {
   place-content: center;
@@ -257,8 +257,9 @@ header{
   width: auto;
   height: 2rem;
   padding-top: 1rem;
-}
-  .header-box img {   
+} 
+
+.header-box img {   
     float: right;
     height: 18px;  
     padding-right: 24px;
@@ -268,7 +269,7 @@ header{
   .header-box {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
+} 
    
 .logo img {
   display: flex;
@@ -454,7 +455,7 @@ header .logo img:hover {
 
 .middle-bar {
   margin-top: 0px;
-}
+} 
 
 /* Navbar X Star */
 
@@ -494,9 +495,9 @@ header .logo img:hover {
 
 /* Navbar Toggler Collapse End */
 
-/* .navbar-toggler.collapsed .toggler-icon {
+.navbar-toggler.collapsed .toggler-icon {
   background: linear-gradient(263deg, var(--clr-primary-100) 0%, var(--clr-primary-400) 100%);
-} */
+}
 
 /* End Nav */
 
@@ -521,7 +522,7 @@ header .logo img:hover {
   background-repeat: x;
   background-size: cover;
   background-position: center;
-}
+} 
 
 .text-cn {
   text-align: center;  
@@ -562,7 +563,7 @@ header .logo img:hover {
   background: none;
   color: var(--clr-primary-100);
   opacity: 20%;
-}
+} 
 
 .carousel__previous-p:hover,
 .carousel__next-p:hover {
@@ -575,7 +576,7 @@ header .logo img:hover {
 
 .carousel__next-p {
   right: -30px;
-}
+} 
 
 .carousel__list-p {
   overflow: hidden;
@@ -583,18 +584,18 @@ header .logo img:hover {
 
 .carousel__elements-p button {
   margin-top: 20px;
-}
+} 
 
 .carousel__elements-p p {
   margin-top: 10px;
   margin-bottom: 0;
-}
+} 
 
 .carousel__indicator-p.glider-dots button {
   margin-top: 50px;
   background: var(--clr-primary-100);
   opacity: .2;  
-}
+} 
 
 .carousel__indicator-p.glider-dots button:hover {
   opacity: .5;
@@ -617,7 +618,7 @@ header .logo img:hover {
   margin: auto;
   margin-top: var(--size-400);
   border: 0; 
-}    
+} 
     
 .box-icon {
   display:flex;
@@ -947,22 +948,6 @@ header .logo img:hover {
     display: none;
   }
 }
-
-/* .empty-space {
-  margin-bottom: 400px;
-}
-
-@media (max-width: 992px) {
-  .empty-space {
-    margin-bottom: 150px;
-  }
-}
-
-@media (max-width: 300px) {
-  .empty-space {
-    margin-bottom: 100px;
-  }
-} */
 
 /* End Carousel-C */
 

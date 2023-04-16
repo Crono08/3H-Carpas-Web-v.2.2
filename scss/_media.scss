@@ -1,28 +1,11 @@
-//Media queries
-@media (min-width: 50em) {
+// Media queries
+@media (min-width: 50em){
   :root {
-    $fs-body: fs-400;
-    $fs-nav: fs-300;
-    $fs-primary-heading: fs-900;
-    $fs-secundary-heading: fs-700;    
+    --fs-body: #($fs-400);
+    --fs-nav: #($fs-300);
+    --fs-primary-heading: #($fs-900);
+    --fs-secundary-heading: #($fs-700);    
   }
-}
-
-//* Eliminar todas las animaciones, transiciones y desplazamiento suave para las personas que prefieren no verlos */
-
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-     scroll-behavior: auto;
-    }
-}
-    
-*,
-*::before,
-*::after {
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  transition-duration: 0.01ms !important;
-  scroll-behavior: auto !important;
 }
 
 // Header
@@ -49,5 +32,118 @@
 @media (max-width: 992px) {
   .text-cn {
     text-align: left;
+  }
+}
+
+@media (max-width: 992px){
+  .box {
+    display: none;
+  }
+  .box a{
+    display: none;
+  }
+}
+
+// Carousel
+
+@media (max-width: 992px){
+  .carousel__previous,
+  .carousel__next {
+  display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel__previous-p,
+  .carousel__next-p {
+    display: none;
+  }
+}
+
+@media (max-width: 992px){
+  .carousel__previous-c,
+  .carousel__next-c,
+  .carousel__indicator-c.glider-dots {
+    button {
+      display: none;
+    }
+  }
+}
+
+// Home
+
+@media (max-width: 992px){
+  .text-bg-img {
+    padding: 60% 0%;
+  }
+}
+
+@media (max-width: 992px){
+  .text-cn {
+    text-align: left;
+  }
+}
+
+@media (max-width: 992px) {
+  .box-icon {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-v {
+    width: 350px;
+    height: 196.88px;
+  }
+}
+
+@media (max-width: 992px) {
+  .youtube{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+  }
+  .form-container {
+    width: 67%;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+  }
+  .form-container {
+    width: 51%;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+// Footer
+
+@media (max-width: 992px) {
+  .container-footer {
+    display: grid;
+  }
+
+  .f-container {
+    width: 100%;
+    height: 5%;
+    margin: auto;
+    position: relative;
   }
 }

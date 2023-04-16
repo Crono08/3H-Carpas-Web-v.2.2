@@ -1,15 +1,14 @@
-//Color variations
-
 $clr-primary-100: #191E25;
 $clr-primary-300: #FF9353;
 $clr-primary-400: #FF5F00;
 $clr-primary-500: #3a3e44;
 
+$clr-accent-100: null;
+$clr-accent-400: null;
+
 $clr-neutral-100: #FFFFFF;
 $clr-neutral-200: #b3b3b3;
-$clr-neutral-400: #F0F0F0;
-
-// Font
+$clr-neutral-400: #dfdede;
 
 $ff-primary: 'Rubik', sans-serif;
 
@@ -21,8 +20,6 @@ $fw-regular: 500;
 $fw-semi-bold: 700;
 $fw-bold: 800;
 
-$fs-100: .25rem;
-$fs-200: .5rem;
 $fs-300: .875rem;
 $fs-400: 1rem;
 $fs-500: 1.563rem;
@@ -30,8 +27,6 @@ $fs-600: 2rem;
 $fs-700: 2.188rem;
 $fs-800: 2.5rem;
 $fs-900: 3.5rem;
-$fs-1000: 4rem;
-$fs-1100: 5rem;
 
 $fch-100: 45ch;
 $fch-200: 50ch;
@@ -39,13 +34,12 @@ $fch-300: 60ch;
 $fch-400: 70ch;
 
 $fl-spacer-100: 1em;
-$fl-spacer-200: 2em;     
+$fl-spacer-200: 2em;
 
-$fs-body: 1rem;
-$fs-button: .875rem;
-$fs-nav: 1.563rem;
-$fs-primary-heading: 2.5rem;
-$fs-secundary-heading: 2.188rem;
+$fs-body: $fs-400;
+$fs-button: $fs-300;
+$fs-nav: $fs-500;
+$fs-primary-heading: $fs-800;
 
 $size-100: .25rem;
 $size-200: .5rem;
@@ -57,96 +51,124 @@ $size-700: 3rem;
 $size-800: 4rem;
 $size-900: 5rem;
 
-//* Clases Utiles */
+:root {
+  --clr-primary-100: #{$clr-primary-100};
+  --clr-primary-300: #{$clr-primary-300};
+  --clr-primary-400: #{$clr-primary-400};
+  --clr-primary-500: #{$clr-primary-500};
 
-.text-primary-400 {
-    color: $clr-primary-400;
+  --clr-accent-100: #{$clr-accent-100};
+  --clr-accent-400: #{$clr-accent-400};
+
+  --clr-neutral-100: #{$clr-neutral-100};
+  --clr-neutral-200: #{$clr-neutral-200};
+  --clr-neutral-400: #{$clr-neutral-400};
+
+  --ff-primary: #{$ff-primary};
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-light: #{$fw-light};
+  --fw-regular: #{$fw-regular};
+  --fw-semi-bold: #{$fw-semi-bold};
+  --fw-bold: #{$fw-bold};
+
+  --fs-300: #{$fs-300};
+  --fs-400: #{$fs-400};
+  --fs-500: #{$fs-500};
+  --fs-600: #{$fs-600};
+  --fs-700: #{$fs-700};
+  --fs-800: #{$fs-800};
+  --fs-900: #{$fs-900};
+
+  --fch-100: #{$fch-100};
+  --fch-200: #{$fch-200};
+  --fch-300: #{$fch-300};
+  --fch-400: #{$fch-400};
 }
 
-.text-secundary-400 {
+/* Clases Utiles */
+
+.text-primary-400 {
     color: $clr-primary-100;
 }
 
-.text-neutral-100 {
-    color: $clr-neutral-100;
+.text-accent-400 {
+color: $clr-accent-400;
 }
 
-.text-neutral-200 {
-    color: $clr-neutral-200;
+.text-accent-100 {
+color: $clr-accent-400;
 }
 
 .text-neutral-400 {
-    color: $clr-neutral-400;
+color: $clr-neutral-400;
+}
+
+.text-neutral-100 {
+color: $clr-neutral-100;
+}
+
+.bg-primary-100 {
+background-color: $clr-primary-100;
+}
+
+.bg-primary-400 {
+background-color: $clr-primary-400;
+}
+
+.bg-accent-400 {
+background-color: $clr-accent-400;
+}
+
+.bg-accent-100 {
+background-color: $clr-accent-400;
 }
 
 .bg-neutral-400 {
-    background-color: $clr-neutral-400;
+background-color: $clr-neutral-400;
 }
 
 .bg-neutral-100 {
-    background-color: $clr-neutral-100;
+background-color: $clr-neutral-200;
 }
 
 .bg-neutral-200 {
-    background-color: $clr-primary-500;
+background-color: $clr-primary-500;
 }
 
-.fw-bold { font-weight: $fw-bold;
-}
-
-.fw-semi-bold { font-weight: $fw-semi-bold;
-}
-
-.fw-regural { font-weight: $fw-regular;
-}
-
-.fw-bold {
-    font-weight: $fw-bold;
-}
-.fw-semi-bold {
-    font-weight: $fw-semi-bold;
-}
-.fw-regural {
-    font-weight: $fw-regular;
-}
+.fw-bold { font-weight: $fw-bold;}
+.fw-semi-bold { font-weight: $fw-semi-bold;}
+.fw-regural { font-weight: $fw-regular;}
 
 .fs-primary-heading {
-  font-size: $fs-primary-heading;
+    font-size: $fs-primary-heading;
 }
 
-.fs-secundary-heading {
-  font-size: $fs-secundary-heading;
+.fs-300 { font-size: $fs-300}
+.fs-400 { font-size: $fs-400}
+.fs-500 { font-size: $fs-500}
+.fs-600 { font-size: $fs-600}
+
+.fch-100 {max-width: $fch-100}
+.fch-200 {max-width: $fch-200}
+.fch-300 {max-width: $fch-300}
+.fch-400 {max-width: $fch-400}
+
+.padding-block-900{
+ padding-block: $size-900;
 }
 
-.fs-300 {
-    font-size: $fs-300;
+.padding-block-700 {
+ padding-block: $size-700;
 }
 
-.fs-400 {
-    font-size: $fs-400;
+.padding-block-500 {
+ padding-block: $size-500;
 }
 
-.fs-500 {
-    font-size: $fs-500;
-}
-
-.fs-600 {
-    font-size: $fs-600;
-}
-
-.fch-100 {
-    max-width: $fch-100;
-}
-
-.fch-200 {
-    max-width: $fch-200;
-}
-
-.fch-300 {
-    max-width: $fch-300;
-}
-
-.fch-400 {
-    max-width: $fch-400;
+.padding-block-400 {
+ padding-block: $size-400;
 }
 
