@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap");
 .text-primary-400 {
   color: #FF5F00;
 }
@@ -7,91 +8,91 @@
 }
 
 .text-neutral-100 {
-  color: var(#FFFFFF);
+  color: #FFFFFF;
 }
 
 .text-neutral-200 {
-  color: var(#b3b3b3);
+  color: #b3b3b3;
 }
 
 .text-neutral-400 {
-  color: var(#F0F0F0);
+  color: #F0F0F0;
 }
 
 .bg-neutral-400 {
-  background-color: var(#F0F0F0);
+  background-color: #F0F0F0;
 }
 
 .bg-neutral-100 {
-  background-color: var(#FFFFFF);
+  background-color: #FFFFFF;
 }
 
 .bg-neutral-200 {
-  background-color: var(#3a3e44);
+  background-color: #3a3e44;
 }
 
 .fw-bold {
-  font-weight: var(800);
+  font-weight: 800;
 }
 
 .fw-semi-bold {
-  font-weight: var(700);
+  font-weight: 700;
 }
 
 .fw-regural {
-  font-weight: var(500);
+  font-weight: 500;
 }
 
 .fw-bold {
-  font-weight: var(800);
+  font-weight: 800;
 }
 
 .fw-semi-bold {
-  font-weight: var(700);
+  font-weight: 700;
 }
 
 .fw-regural {
-  font-weight: var(500);
+  font-weight: 500;
 }
 
 .fs-primary-heading {
-  font-size: var(2.5rem);
+  font-size: 2.5rem;
 }
 
 .fs-secundary-heading {
-  font-size: var(2.188rem);
+  font-size: 2.188rem;
 }
 
 .fs-300 {
-  font-size: var(0.875rem);
+  font-size: 0.875rem;
 }
 
 .fs-400 {
-  font-size: var(1rem);
+  font-size: 1rem;
 }
 
 .fs-500 {
-  font-size: var(1.563rem);
+  font-size: 1.563rem;
 }
 
 .fs-600 {
-  font-size: var(2rem);
+  font-size: 2rem;
 }
 
 .fch-100 {
-  max-width: var(45ch);
+  max-width: 45ch;
 }
 
 .fch-200 {
-  max-width: var(50ch);
+  max-width: 50ch;
 }
 
 .fch-300 {
-  max-width: var(60ch);
+  max-width: 60ch;
 }
 
 .fch-400 {
-  max-width: var(70ch);
+  max-width: 70ch;
 }
 
 *,
@@ -126,9 +127,9 @@ body {
 }
 
 body {
-  font-size: var(1rem);
-  font-family: var(var(--ff-primary));
-  color: var(#191E25);
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  color: #191E25;
 }
 
 a:not([class]) {
@@ -161,7 +162,7 @@ select {
 }
 
 header {
-  border-bottom: 2px solid var(#FF5F00);
+  border-bottom: 2px solid #FF5F00;
 }
 
 .container-header {
@@ -176,7 +177,7 @@ header {
   text-align: center;
   display: grid;
   text-transform: uppercase;
-  font-size: var(0.875rem);
+  font-size: 0.875rem;
   width: auto;
   height: 2rem;
   padding-top: 1rem;
@@ -210,7 +211,7 @@ header .logo img:hover {
   transition: all 0.2s;
   height: 2px;
   width: 100%;
-  background-color: var(#FF5F00);
+  background-color: #FF5F00;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -227,17 +228,17 @@ header .logo img:hover {
   width: 100%;
   padding: 0 10px;
   border-radius: 50px;
-  border-color: var(#191E25);
+  border-color: #191E25;
   border-style: solid;
   font-weight: 100;
-  font-size: var(0.25rem);
+  font-size: 1rem;
   text-transform: capitalize;
   position: relative;
-  color: var(#191E25);
+  color: #191E25;
   height: 2.5rem;
 }
 .h-search-form input :hover {
-  border-color: var(#FF5F00);
+  border-color: #FF5F00;
   border-style: solid;
 }
 
@@ -245,17 +246,17 @@ header .logo img:hover {
   width: 100%;
   padding: 0 10px;
   border-radius: 50px;
-  border-color: var(#191E25);
+  border-color: #191E25;
   border-style: solid;
   font-weight: 100;
-  font-size: var(0.25rem);
+  font-size: 1rem;
   text-transform: capitalize;
   position: relative;
-  color: var(#191E25);
+  color: #191E25;
   height: 2.5rem;
 }
 .h-search-form input :hover {
-  border-color: var(--clr-primary-400);
+  border-color: #FF5F00;
   border-style: solid;
 }
 
@@ -264,15 +265,15 @@ header .logo img:hover {
   right: 3px;
   height: 2.125rem;
   border: none;
-  color: var(--clr-primary-100);
+  color: #191E25;
   background: none;
   top: 3px;
   border-radius: 50px;
   width: 35px;
 }
 .h-search-form button :hover {
-  background: var(--clr-primary-100);
-  color: var(--clr-neutral-100);
+  background: #191E25;
+  color: #FFFFFF;
 }
 
 .navbar-toggler {
@@ -301,7 +302,7 @@ header .logo img:hover {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: var(#191E25);
+  background: #191E25;
   border-radius: 1px;
   opacity: 1;
   left: 0;
@@ -343,14 +344,6 @@ header .logo img:hover {
   transform: rotate(0deg);
 }
 
-@media (min-width: 50em) {
-  :root {
-    --fs-body: var($fs-400);
-    --fs-nav: var($fs-300);
-    --fs-primary-heading: var($fs-900);
-    --fs-secundary-heading: var($fs-700);
-  }
-}
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -376,6 +369,16 @@ header .logo img:hover {
     grid-auto-columns: 1fr;
   }
 }
+@media (max-width: 992px) {
+  .text-bg-img {
+    padding: 60% 0%;
+  }
+}
+@media (max-width: 992px) {
+  .text-cn {
+    text-align: left;
+  }
+}
 .button {
   cursor: pointer;
   display: inline-flex;
@@ -384,11 +387,11 @@ header .logo img:hover {
   border: 0;
   border-radius: 100vmax;
   padding: 0.75em 2.5em;
-  font-weight: var(--fw-regular);
-  font-size: var(--fs-button);
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-400);
-  box-shadow: 0 1.125em 1em -1.125em var(--clr-primary-500);
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  background-color: #FF5F00;
+  box-shadow: 0 1.125em 1em -1.125em #3a3e44;
 }
 .button i {
   font-size: 1rem;
@@ -396,7 +399,7 @@ header .logo img:hover {
 }
 .button :hover,
 .button :focus-visible {
-  background-color: var(#FF9353);
+  background-color: #FF9353;
 }
 
 .button-sm {
@@ -407,11 +410,11 @@ header .logo img:hover {
   border: 0;
   border-radius: 100vmax;
   padding: 0.6em 1.5em;
-  font-weight: var(--fw-regular);
-  font-size: var(--fs-button);
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-100);
-  box-shadow: 0 1.125em 1em -1.125em var(--clr-primary-500);
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  background-color: #191E25;
+  box-shadow: 0 1.125em 1em -1.125em #3a3e44;
 }
 .button-sm i {
   font-size: 1rem;
@@ -419,7 +422,22 @@ header .logo img:hover {
 }
 .button-sm :hover,
 .button-sm :focus-visible {
-  background-color: var(--clr-primary-300);
+  background-color: #FF9353;
+}
+
+.text-bg-img {
+  color: var(--clr-neutral-100);
+  justify-content: center;
+  padding: 20% 20% 20% 15%;
+}
+
+.bg-img {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../images/header/3H-playa-carpas-slider-02.webp);
+  background-repeat: x;
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=main.css.map */
