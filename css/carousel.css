@@ -1,0 +1,227 @@
+/* Star Carousel-P */
+
+.carousel__container-p {
+  position: relative;
+  text-align: center;
+  align-content: center;
+}
+
+.carousel__container-p img {
+  margin: auto;
+  height: 300px;
+  border-radius: 10px 10px 70px 10px;
+}
+
+.carousel__previous-p,
+.carousel__next-p {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 50px;
+  font-size: 35px;
+  text-align: center;
+  background: none;
+  color: var(--clr-primary-100);
+  opacity: 20%;
+} 
+
+.carousel__previous-p:hover,
+.carousel__next-p:hover {
+  opacity: 100%;
+}
+
+.carousel__previous-p {
+  left: -30px;
+}
+
+.carousel__next-p {
+  right: -30px;
+} 
+
+.carousel__list-p {
+  overflow: hidden;
+}
+
+.carousel__elements-p button {
+  margin-top: 20px;
+} 
+
+.carousel__elements-p p {
+  margin-top: 10px;
+  margin-bottom: 0;
+} 
+
+.carousel__indicator-p.glider-dots button {
+  margin-top: 50px;
+  background: var(--clr-primary-100);
+  opacity: .2;  
+} 
+
+.carousel__indicator-p.glider-dots button:hover {
+  opacity: .5;
+}
+
+.carousel__indicator-p.glider-dots button.active {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .carousel__previous-p,
+  .carousel__next-p {
+    display: none;
+  }
+}
+
+/* End Carousel-P */
+
+/* Star Carousel */
+
+.carousel__container {
+  position: relative;
+  text-align: center;
+}
+
+.carousel__previous,
+.carousel__next {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 50px;
+  font-size: 35px;
+  text-align: center;
+  background: none;
+  color: var(--clr-primary-100);
+  opacity: 20%;
+}
+
+.carousel__previous:hover,
+.carousel__next:hover {
+  opacity: 100%;
+}
+
+.carousel__previous {
+  left: -30px;
+}
+
+.carousel__next {
+  right: -30px;
+}
+
+.carousel__list {
+  overflow: hidden;
+}
+
+.carousel__elements img {
+  margin: auto;
+  height: 250px;
+}
+
+.carousel__elements button {
+  align-content: center;
+  margin-top: 20px;
+}
+
+.carousel__indicator.glider-dots button {
+  margin-top: 50px;
+  background: var(--clr-primary-100);
+  opacity: .2;  
+}
+
+.carousel__indicator.glider-dots button:hover {
+  opacity: .5;
+}
+
+.carousel__indicator.glider-dots button.active {
+  opacity: 1;
+}
+
+@media (max-width: 992px){
+  .carousel__previous,
+  .carousel__next {
+    display: none;
+  }
+}
+
+/* End Carousel */
+
+/* Star Carousel-C */
+
+.carousel__container-c {
+  position: relative;
+  text-align: center;
+}
+
+.carousel__previous-c,
+.carousel__next-c {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 50px;
+  font-size: 35px;
+  text-align: center;
+  background: none;
+  color: var(--clr-primary-100);
+  opacity: 20%;
+}
+
+.carousel__previous-c:hover,
+.carousel__next-c:hover {
+  opacity: 100%;
+}
+
+.carousel__previous-c {
+  left: -30px;
+}
+
+.carousel__next-c {
+  right: -30px;
+}
+
+.carousel__list-c {
+  overflow: hidden;
+}
+
+.carousel__elements-c button {
+  margin-top: 20px;
+}
+
+.carousel__elements-c p {
+  margin-bottom: 0;
+}
+
+.carousel__indicator-c.glider-dots button {
+  margin-top: 40px;
+  background: var(--clr-primary-100);
+  opacity: .2;  
+}
+
+.carousel__indicator-c.glider-dots button:hover {
+  opacity: .5;
+}
+
+.carousel__indicator-c.glider-dots button.active {
+  opacity: 1;
+}
+
+@media (max-width: 992px){
+  .carousel__previous-c,
+  .carousel__next-c,
+  .carousel__indicator-c.glider-dots button {
+    display: none;
+  }
+}
+
+/* End Carousel-C */
+

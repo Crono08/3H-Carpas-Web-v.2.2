@@ -403,11 +403,11 @@ header .logo img:hover {
   padding: 20% 20% 20% 15%;
 }
 
-.bg-img {
+.slider-home {
   width: 100%;
   height: 85vh;
-  background-image: url(../images/header/3H-playa-carpas-slider-02.webp);
-  background-repeat: x;
+  background-image: url("../images/header/3H-playa-carpas-slider-02.webp");
+  background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
 }
@@ -572,6 +572,138 @@ header .logo img:hover {
   height: 500px;
 }
 
+.slider-plegable {
+  width: 100%;
+  height: 85vh;
+  background-image: url("../images/header/HEADER-Kitcampeonato2_WEBSITE_3H-2.webp");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-set-pla {
+  width: 100%;
+  height: 85vh;
+  background-image: url("../images/header/3H-playa-carpas-slider-01.webp");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+}
+
+.container_set {
+  display: flex;
+  flex-direction: row;
+}
+.container_set .set-p {
+  margin: 0px 10px;
+  text-align: center;
+}
+.container_set .set-p p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.container_set .set-p button {
+  margin-top: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: auto;
+  grid-gap: 1rem;
+  border-radius: 50px;
+}
+.gallery-container .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-brisa {
+  width: 100%;
+  height: 85vh;
+  background-image: url("../images/header/header-web-3h-carpas-brisa.webp");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+}
+
+.descp-text {
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+.comp-bri {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+.comp-bri img {
+  width: 80%;
+  align-content: center;
+  margin: auto;
+}
+
+.container_bri {
+  display: flex;
+  flex-direction: row;
+}
+.container_bri .set-bri {
+  margin: auto;
+  text-align: center;
+}
+.container_bri .set-bri img {
+  margin-bottom: -30px;
+}
+.container_bri .set-bri p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container_bri .set-bri button {
+  margin-top: 20px;
+}
+
+.slider-taj {
+  width: 100%;
+  height: 85vh;
+  background-image: url("../images/header/1-SLIDER_GRAVITY-4_WEB2022_3H.webp");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-taj-slider {
+  width: 100%;
+  height: 65vh;
+  background-image: url(../images/productos/Taj-mahal/3H-taj-mahal-landing-techo.webp);
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+}
+
+.bt-center {
+  padding-top: 200px;
+  margin: auto;
+}
+
+.taj-doble-img {
+  margin: -150px 0px;
+}
+
+.slider-stand {
+  width: 100%;
+  height: 85vh;
+  background-image: url("../images/header/SLIDER_STAND-LXA_JUL2021_3H-2.webp");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 50em) {
   :root {
     --fs-body: #($fs-400);
@@ -629,6 +761,12 @@ header .logo img:hover {
   }
 }
 @media (max-width: 992px) {
+  #img-bg {
+    position: absolute;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 992px) {
   .text-bg-img {
     padding: 60% 0%;
   }
@@ -662,12 +800,12 @@ header .logo img:hover {
   .contact-container {
     grid-template-columns: 1fr;
     margin: auto;
-    width: 100%;
+    width: auto;
   }
   .form-container {
     width: 67%;
-    margin: auto;
     justify-content: center;
+    text-align: center;
   }
 }
 @media (max-width: 300px) {
@@ -683,220 +821,96 @@ header .logo img:hover {
   }
 }
 @media (max-width: 992px) {
+  .container_set {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container_set button {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.25rem;
+  }
+}
+@media (max-width: 992px) {
+  .comp-bri {
+    display: flex;
+    flex-direction: column;
+  }
+  .comp-bri img {
+    width: 40%;
+    align-content: center;
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .container_bri {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container_bri button {
+    margin-bottom: 50px;
+  }
+  .set-bri img {
+    margin-bottom: -30px;
+  }
+}
+@media (max-width: 992px) {
+  .taj-doble-img {
+    margin-top: -10px;
+    margin-bottom: -100px;
+  }
+}
+@media (max-width: 992px) {
   .container-footer {
     display: grid;
   }
   .f-container {
     width: 100%;
     height: 5%;
-    margin: auto;
     position: relative;
   }
 }
 /* Star Button */
-.button {
+.button-base, .button-sm, .button {
   cursor: pointer;
   display: inline-flex;
   text-decoration: none;
   align-items: center;
   border: 0;
   border-radius: 100vmax;
-  padding: 0.75em 2.5em;
   font-weight: 500;
   font-size: 0.875rem;
   color: #FFFFFF;
-  background-color: #FF5F00;
   box-shadow: 0 1.125em 1em -1.125em #3a3e44;
 }
-.button i {
+.button-base i, .button-sm i, .button i {
   font-size: 1rem;
   padding-left: 1em;
 }
-.button:hover, .button:focus-visible {
+.button-base:hover, .button-sm:hover, .button:hover, .button-base:focus-visible, .button-sm:focus-visible, .button:focus-visible {
   background-color: #FF9353;
 }
 
-.button-sm {
-  cursor: pointer;
-  display: inline-flex;
-  text-decoration: none;
-  align-items: center;
-  border: 0;
-  border-radius: 100vmax;
-  padding: 0.6em 1.5em;
-  font-weight: 500;
-  font-size: 0.875rem;
-  color: #FFFFFF;
-  background-color: #191E25;
-  box-shadow: 0 1.125em 1em -1.125em #3a3e44;
+.button {
+  padding: 0.75em 2.5em;
+  background-color: #FF5F00;
 }
-.button-sm i {
-  font-size: 1rem;
-  padding-left: 1em;
+
+.button-sm {
+  padding: 0.6em 1.5em;
+  background-color: #191E25;
 }
 .button-sm:hover, .button-sm:focus-visible {
   background-color: #3a3e44;
 }
 
 /* End Button */
-.bg-img {
-  width: 100%;
-  height: 85vh;
-  background-image: url("../images/header/3H-playa-carpas-slider-02.webp");
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-img-ple {
-  width: 100%;
-  height: 85vh;
-  background-image: url("../images/header/SLD_BICIS_MAY2021_3H-1024x555.jpg");
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-img-set {
-  width: 100%;
-  height: 85vh;
-  background-image: url("../images/header/3H-SLIDER-SET-PLAYER-3_VERANO2021-1024x555.webp");
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-img-bri {
-  width: 100%;
-  height: 85vh;
-  background-image: url("../images/header/header-web-3h-carpas-brisa.webp");
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-img-taj {
-  width: 100%;
-  height: 85vh;
-  background-image: url("../images/header/img1-arana17-1024x1024.jpg");
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-img-sta {
-  width: 100%;
-  height: 85vh;
-  background-image: url("../images/header/MST_BANNER-EDIT_PERSONALIZADO_WEBSITE.jpg");
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: center;
-}
-
-.carousel__container {
-  position: relative;
-  text-align: center;
-}
-.carousel__container .carousel__previous,
-.carousel__container .carousel__next {
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: none;
-  top: calc(50% - 35px);
-  cursor: pointer;
-  line-height: 50px;
-  font-size: 35px;
-  text-align: center;
-  background: none;
-  color: #191E25;
-  opacity: 20%;
-}
-.carousel__container .carousel__previous:hover,
-.carousel__container .carousel__next:hover {
-  opacity: 100%;
-}
-.carousel__container .carousel__previous {
-  left: -30px;
-}
-.carousel__container .carousel__next {
-  right: -30px;
-}
-.carousel__container .carousel__list {
-  overflow: hidden;
-}
-.carousel__container .carousel__elements img {
-  margin: auto;
-  height: 250px;
-}
-.carousel__container .carousel__elements button {
-  align-content: center;
-  margin-top: 20px;
-}
-.carousel__container .carousel__indicator.glider-dots button {
-  margin-top: 50px;
-  background: #191E25;
-  opacity: 0.2;
-}
-.carousel__container .carousel__indicator.glider-dots button:hover {
-  opacity: 0.5;
-}
-.carousel__container .carousel__indicator.glider-dots button.active {
-  opacity: 1;
-}
-
-.carousel__container-c {
-  position: relative;
-  text-align: center;
-}
-.carousel__container-c .carousel__previous-c,
-.carousel__container-c .carousel__next-c {
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: none;
-  top: calc(50% - 35px);
-  cursor: pointer;
-  line-height: 50px;
-  font-size: 35px;
-  text-align: center;
-  background: none;
-  color: #191E25;
-  opacity: 20%;
-}
-.carousel__container-c .carousel__previous-c:hover,
-.carousel__container-c .carousel__next-c:hover {
-  opacity: 100%;
-}
-.carousel__container-c .carousel__previous-c {
-  left: -30px;
-}
-.carousel__container-c .carousel__next-c {
-  right: -30px;
-}
-.carousel__container-c .carousel__list-c {
-  overflow: hidden;
-}
-.carousel__container-c .carousel__elements-c button {
-  margin-top: 20px;
-}
-.carousel__container-c .carousel__elements-c p {
-  margin-bottom: 0;
-}
-.carousel__container-c .carousel__indicator-c.glider-dots button {
-  margin-top: 40px;
-  background: #191E25;
-  opacity: 0.2;
-}
-.carousel__container-c .carousel__indicator-c.glider-dots button:hover {
-  opacity: 0.5;
-}
-.carousel__container-c .carousel__indicator-c.glider-dots button.active {
-  opacity: 1;
-}
-
 .f-container {
   width: 100%;
   height: 40%;

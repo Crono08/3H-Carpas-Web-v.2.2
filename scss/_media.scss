@@ -73,6 +73,13 @@
 // Home
 
 @media (max-width: 992px){
+  #img-bg {
+    position: absolute;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 992px){
   .text-bg-img {
     padding: 60% 0%;
   }
@@ -133,6 +140,56 @@
   }
 }
 
+// Plegable
+
+// Set Playero
+
+@media (max-width: 992px) {
+  .container_set {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container_set button {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 992px){
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.25rem; 
+  }
+}
+
+// Brisa
+
+@media (max-width: 992px) {
+  .comp-bri {
+    display: flex;
+    flex-direction: column;
+  }
+  .comp-bri img {
+    width: 40%;
+    align-content: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .container_bri {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+    .container_bri button {
+      margin-bottom: 50px;
+    }
+      .set-bri img {
+        margin-bottom: -30px;
+      }
+}
+
 //Tah Mahal
 
 @media (max-width: 992px) {
@@ -148,11 +205,9 @@
   .container-footer {
     display: grid;
   }
-
-  .f-container {
-    width: 100%;
-    height: 5%;
-    margin: auto;
-    position: relative;
-  }
+    .f-container {
+      width: 100%;
+      height: 5%;
+      position: relative;
+    }
 }

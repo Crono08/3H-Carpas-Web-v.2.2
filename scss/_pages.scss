@@ -1,17 +1,21 @@
 // Home Page
+@mixin bg-img($img-path) {
+    width: 100%;
+    height: 85vh;
+    background-image: url($img-path);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+}
+
 .text-bg-img {
     color: var(--clr-neutral-100);
     justify-content: center;
     padding: 20%  20%  20% 15%;  
 }
 
-.bg-img {
-    width: 100%;
-    height: 85vh;
-    background-image: url(../images/header/3H-playa-carpas-slider-02.webp);
-    background-repeat: x;
-    background-size: cover;
-    background-position: center;
+.slider-home {
+    @include bg-img("../images/header/3H-playa-carpas-slider-02.webp");
 }
 
 .text-cn {
@@ -170,4 +174,130 @@ margin-top: 15px;
 .map iframe {
 width: 500px;
 height: 500px;
+}
+
+// Plegable
+
+.slider-plegable {
+    @include bg-img("../images/header/HEADER-Kitcampeonato2_WEBSITE_3H-2.webp");
+}
+
+// Set playero
+
+.slider-set-pla {
+    @include bg-img("../images/header/3H-playa-carpas-slider-01.webp");
+}
+
+.container_set {
+    display: flex;
+    flex-direction: row;
+  
+    .set-p {
+      margin: 0px 10px;
+      text-align: center;
+  
+      p {
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+  
+      button {
+        margin-top: 20px;
+      }
+    }
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 1rem;  
+    border-radius: 50px;
+
+    .gallery-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Brisa
+
+.slider-brisa {
+    @include bg-img("../images/header/header-web-3h-carpas-brisa.webp");
+}
+
+.descp-text {
+    color: $clr-neutral-100;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.comp-bri {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+
+    img {
+      width: 80%;
+      align-content: center;
+      margin: auto;
+    }
+}
+
+.container_bri {
+    display: flex;
+    flex-direction: row;
+  
+    .set-bri {
+      margin: auto;
+      text-align: center;
+  
+      img {
+        margin-bottom: -30px;
+      }
+  
+      p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+  
+      button {
+        margin-top: 20px;
+      }
+    }
+}
+
+// Taj Mahal
+
+.slider-taj {
+    @include bg-img("../images/header/1-SLIDER_GRAVITY-4_WEB2022_3H.webp");
+}
+
+.bg-img-taj-slider {
+    width: 100%;
+    height: 65vh;
+    background-image: url(../images/productos/Taj-mahal/3H-taj-mahal-landing-techo.webp);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+}
+
+.bt-center {
+    padding-top: 200px;
+    margin: auto;
+}
+  
+.taj-doble-img {
+margin: -150px 0px;
+}
+
+// Stand
+
+.slider-stand {
+    @include bg-img("../images/header/SLIDER_STAND-LXA_JUL2021_3H-2.webp");
 }

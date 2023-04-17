@@ -1,21 +1,19 @@
 /* Star Button */
 
-.button {
+.button-base {
   cursor: pointer;
-  display: inline-flex;  
+  display: inline-flex;
   text-decoration: none;
   align-items: center;
   border: 0;
   border-radius: 100vmax;
-  padding: 0.75em 2.5em;
   font-weight: $fw-regular;
   font-size: $fs-button;
   color: $clr-neutral-100;
-  background-color: $clr-primary-400;
   box-shadow: 0 1.125em 1em -1.125em $clr-primary-500;
 
   i {
-    font-size: 1rem;   
+    font-size: 1rem;
     padding-left: 1em;
   }
 
@@ -25,24 +23,16 @@
   }
 }
 
-.button-sm {
-  cursor: pointer;
-  display: inline-flex;  
-  text-decoration: none;
-  align-items: center;
-  border: 0;
-  border-radius: 100vmax;
-  padding: 0.60em 1.5em;
-  font-weight: $fw-regular;
-  font-size: $fs-button;
-  color: $clr-neutral-100;
-  background-color: $clr-primary-100;
-  box-shadow: 0 1.125em 1em -1.125em $clr-primary-500;
+.button {
+  @extend .button-base;
+  padding: 0.75em 2.5em;
+  background-color: $clr-primary-400;
+}
 
-  i {
-    font-size: 1rem;   
-    padding-left: 1em;
-  }
+.button-sm {
+  @extend .button-base;
+  padding: 0.60em 1.5em;
+  background-color: $clr-primary-100;
 
   &:hover,
   &:focus-visible {
