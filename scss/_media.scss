@@ -111,12 +111,12 @@
   .contact-container {
     grid-template-columns: 1fr;
     margin: auto;
-    width: 100%;
+    width: auto;
   }
   .form-container {
     width: 67%;
-    margin: auto;
     justify-content: center;
+    text-align: center;
   }
 }
 

@@ -495,9 +495,9 @@ header .logo img:hover {
 
 /* Navbar Toggler Collapse End */
 
-.navbar-toggler.collapsed .toggler-icon {
+/* .navbar-toggler.collapsed .toggler-icon {
   background: linear-gradient(263deg, var(--clr-primary-100) 0%, var(--clr-primary-400) 100%);
-}
+} */
 
 /* End Nav */
 
@@ -856,11 +856,12 @@ header .logo img:hover {
   .contact-container {
     grid-template-columns: 1fr;
     margin: auto;
-    width: 100%;
+    width: auto;
   }
   .form-container {
     width: 67%;
     justify-content: center;
+    text-align: center;
   }
 }
 
@@ -963,7 +964,7 @@ header .logo img:hover {
 #f-img-bg {
   position: absolute;
   left: -30px;
-  z-index: -2;
+  z-index: -1;
   width: 100%;
 }
 
@@ -1028,13 +1029,8 @@ header .logo img:hover {
   .container-footer {
     display: grid;
   }
-  .f-container {
-    width: 100%;
-    height: 5%;
-    margin: auto;
-    position: relative;
-   }
 }
+
 
 /* End Footer */
 
@@ -1043,7 +1039,7 @@ header .logo img:hover {
 .bg-img-ple {
   width: 100%;
   height: 85vh;
-  background-image: url(../images/header/SLD_BICIS_MAY2021_3H-1024x555.jpg);
+  background-image: url(../images/header/HEADER-Kitcampeonato2_WEBSITE_3H-2.webp);
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
