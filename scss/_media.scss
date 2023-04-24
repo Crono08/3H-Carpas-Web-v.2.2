@@ -127,18 +127,27 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .contact-container {
     grid-template-columns: 1fr;
     margin: auto;
     width: 100%;
   }
   .form-container {
-    width: 51%;
+    width: 90%;
     margin: auto;
     justify-content: center;
   }
 }
+
+@media (max-width: 400px) {
+  .map iframe {
+    margin: auto;
+    width: 336px;
+    height: 500px;
+  }
+}
+
 
 // Plegable
 
@@ -202,12 +211,8 @@
 // Footer
 
 @media (max-width: 992px) {
-  .container-footer {
-    display: grid;
+  .error-404-bg {
+    width: 100%;
+    height: 60vh;
   }
-    .f-container {
-      width: 100%;
-      height: 5%;
-      position: relative;
-    }
 }

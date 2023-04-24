@@ -509,20 +509,6 @@ header .logo img:hover {
   gap: 0.5rem;
   overflow: hidden;
 }
-@media (max-width: 992px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-    margin: auto;
-    width: 100%;
-  }
-}
-@media (max-width: 300px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-    margin: auto;
-    width: 100%;
-  }
-}
 
 .form-container {
   font-size: 1rem;
@@ -532,18 +518,6 @@ header .logo img:hover {
   border-radius: 20px;
   padding: 20px 20px;
   background: #FFFFFF;
-}
-@media (max-width: 992px) {
-  .form-container {
-    width: 67%;
-    justify-content: center;
-  }
-}
-@media (max-width: 300px) {
-  .form-container {
-    width: 51%;
-    justify-content: center;
-  }
 }
 
 .contact-form {
@@ -704,6 +678,29 @@ header .logo img:hover {
   background-position: center;
 }
 
+.contc-map iframe {
+  width: 100%;
+  height: 85vh;
+}
+
+.error-404-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/error/3H_Error-404.svg);
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+  margin: 50px 0px;
+}
+
+.container-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 4em;
+}
+
 @media (min-width: 50em) {
   :root {
     --fs-body: #($fs-400);
@@ -808,16 +805,23 @@ header .logo img:hover {
     text-align: center;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .contact-container {
     grid-template-columns: 1fr;
     margin: auto;
     width: 100%;
   }
   .form-container {
-    width: 51%;
+    width: 90%;
     margin: auto;
     justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .map iframe {
+    margin: auto;
+    width: 336px;
+    height: 500px;
   }
 }
 @media (max-width: 992px) {
@@ -867,13 +871,9 @@ header .logo img:hover {
   }
 }
 @media (max-width: 992px) {
-  .container-footer {
-    display: grid;
-  }
-  .f-container {
+  .error-404-bg {
     width: 100%;
-    height: 5%;
-    position: relative;
+    height: 60vh;
   }
 }
 /* Star Button */
@@ -894,6 +894,7 @@ header .logo img:hover {
   padding-left: 1em;
 }
 .button-base:hover, .button-sm:hover, .button:hover, .button-base:focus-visible, .button-sm:focus-visible, .button:focus-visible {
+  color: #FFFFFF;
   background-color: #FF9353;
 }
 
@@ -907,21 +908,17 @@ header .logo img:hover {
   background-color: #191E25;
 }
 .button-sm:hover, .button-sm:focus-visible {
+  color: #FFFFFF;
   background-color: #3a3e44;
 }
 
 /* End Button */
-.f-container {
-  width: 100%;
-  height: 40%;
-  margin: auto;
-  position: relative;
-}
-.f-container #f-img-bg {
-  position: absolute;
-  left: -30px;
-  z-index: -2;
-  width: 100%;
+.footer-bg {
+  padding: 300px 0px 10px 0px;
+  background-image: url(../images/footer/3H_footer_1800x500.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .box-footer-title img {
@@ -933,7 +930,7 @@ header .logo img:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
 }
 .container-footer .box-footer {

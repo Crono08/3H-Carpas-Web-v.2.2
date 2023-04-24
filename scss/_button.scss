@@ -19,6 +19,7 @@
 
   &:hover,
   &:focus-visible {
+    color: $clr-neutral-100;
     background-color: $clr-primary-300;
   }
 }
@@ -36,6 +37,7 @@
 
   &:hover,
   &:focus-visible {
+    color: $clr-neutral-100;
     background-color: $clr-primary-500;
   }
 }
