@@ -588,10 +588,42 @@ header .logo img:hover {
   grid-gap: 1rem;
   border-radius: 50px;
 }
-.gallery-container .gallery-img {
+
+.gallery-item {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.gallery-item.gallery-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.gallery-item:hover img {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.gallery-item:hover .text-img {
+  visibility: visible;
+}
+
+.text-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #FF5F00;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  visibility: hidden;
+}
+.text-img h4 {
+  margin-bottom: 1.2rem;
 }
 
 .slider-brisa {
@@ -830,13 +862,13 @@ header .logo img:hover {
     flex-direction: column;
     text-align: center;
   }
-  .container_set button {
+  .container_set a.button-sm {
     margin-bottom: 50px;
   }
 }
 @media (max-width: 992px) {
   .gallery-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 0.25rem;
   }
 }

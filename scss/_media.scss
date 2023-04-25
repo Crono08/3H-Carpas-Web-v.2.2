@@ -159,15 +159,15 @@
     flex-direction: column;
     text-align: center;
   }
-  .container_set button {
+  .container_set a.button-sm {
     margin-bottom: 50px;
   }
 }
-
-@media (max-width: 992px){
+  
+@media (max-width: 992px) {
   .gallery-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.25rem; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.25rem;
   }
 }
 
