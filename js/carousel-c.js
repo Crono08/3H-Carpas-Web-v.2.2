@@ -3,6 +3,7 @@ window.addEventListener('load', function(){
         slidesToScroll: 1,
         slidesToShow: 1,
         draggable: true,
+        scrollLock: true,
         dots: '.carousel__indicator-c',
         arrows: {
             prev: '.carousel__previous-c',

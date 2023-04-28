@@ -3,10 +3,15 @@ window.addEventListener('load', function(){
         slidesToScroll: 1,
         slidesToShow: 1,
         draggable: true,
+        scrollLock: true,
         dots: '.carousel__indicator',
         arrows: {
             prev: '.carousel__previous',
             next: '.carousel__next'
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
         },
         responsive: [
             {
@@ -18,7 +23,7 @@ window.addEventListener('load', function(){
                 slidesToScroll: '2',
                 itemWidth: 150,
                 duration: 0.25
-              }
+              } 
             },{
               // screens greater than >= 1024px
               breakpoint: 1024,

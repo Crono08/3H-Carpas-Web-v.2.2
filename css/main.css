@@ -406,7 +406,7 @@ header .logo img:hover {
 .slider-home {
   width: 100%;
   height: 85vh;
-  background-image: url("../images/header/3H-playa-carpas-slider-02.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header/3H-playa-carpas-slider-02.webp");
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
@@ -549,7 +549,7 @@ header .logo img:hover {
 .slider-plegable {
   width: 100%;
   height: 85vh;
-  background-image: url("../images/header/HEADER-Kitcampeonato2_WEBSITE_3H-2.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header/HEADER-Kitcampeonato2_WEBSITE_3H-2.webp");
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
@@ -558,7 +558,7 @@ header .logo img:hover {
 .slider-set-pla {
   width: 100%;
   height: 85vh;
-  background-image: url("../images/header/3H-playa-carpas-slider-01.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header/3H-playa-carpas-slider-01.webp");
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
@@ -629,7 +629,7 @@ header .logo img:hover {
 .slider-brisa {
   width: 100%;
   height: 85vh;
-  background-image: url("../images/header/header-web-3h-carpas-brisa.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header/header-web-3h-carpas-brisa.webp");
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
@@ -677,7 +677,7 @@ header .logo img:hover {
 .slider-taj {
   width: 100%;
   height: 85vh;
-  background-image: url("../images/header/1-SLIDER_GRAVITY-4_WEB2022_3H.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header/1-SLIDER_GRAVITY-4_WEB2022_3H.webp");
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
@@ -704,7 +704,7 @@ header .logo img:hover {
 .slider-stand {
   width: 100%;
   height: 85vh;
-  background-image: url("../images/header/SLIDER_STAND-LXA_JUL2021_3H-2.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header/SLIDER_STAND-LXA_JUL2021_3H-2.webp");
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
@@ -713,6 +713,53 @@ header .logo img:hover {
 .contc-map iframe {
   width: 100%;
   height: 85vh;
+}
+
+.box-form-c {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2px solid #FF5F00;
+}
+
+.contact-container-c {
+  max-width: 660px;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-container-c {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  margin: 15px 10px;
+  border: 2px solid #191E25;
+  border-radius: 20px;
+  padding: 20px 20px;
+  background: #FFFFFF;
+}
+
+.contact-form-c {
+  display: grid;
+  row-gap: 1rem;
+}
+.contact-form-c input,
+.contact-form-c textarea {
+  width: 100%;
+  border: 2px;
+  padding: 10px;
+  background: #dfdede;
+  border-radius: 0.4rem;
+}
+.contact-form-c textarea {
+  resize: none;
+  height: 200px;
+}
+
+.form-button {
+  margin-top: 15px;
 }
 
 .error-404-bg {
@@ -833,6 +880,7 @@ header .logo img:hover {
   }
   .form-container {
     width: 67%;
+    margin: auto;
     justify-content: center;
     text-align: center;
   }
